@@ -1,0 +1,122 @@
+/* Intro Section */
+.Intro{
+    height: 200px; background-color: cornflowerblue;
+}
+.IntroButton{
+    margin-left: 10px;
+    color: white;
+    background-color:mediumblue;
+    height: 30px;
+}
+/* Bookign Section*/
+.Booking{
+    padding-top: 10px;
+    align-items: self-start;
+}
+.BookingDiv{
+    width: auto;
+    height: auto;
+    background-color: skyblue;
+    position: relative;
+    align-items: normal;
+    display: flex;
+}
+.InfoBooking{
+
+    height: 100%;
+    position: inherit;
+}
+.MapDiv{
+    width: 75%;
+    height: 100%;
+    position: inherit;
+    margin: auto;
+}
+/*Canvas*/
+.BookingMap{
+    width: 100%;
+    height: 100%; 
+    background-color:forestgreen;
+    margin: auto;
+    
+}
+
+/*Booking CSS Latest */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    margin-right: 10px;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.lodge {
+    position: absolute;
+    background-color: rgba(85, 200, 100, 0.5);
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lodge.booked, .lodge.unavailable {
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: not-allowed;
+}
+
+.lodge.available {
+    background-color: rgba(85, 200, 100, 0.5);
+}
+
+.lodge-label {
+    color: #000;
+    font-weight: bold;
+}
+
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(25, 154, 158, 0.5);
+    z-index: 1000;
+}
+
+#summary, #final-summary {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #5ca7ee;
+}
