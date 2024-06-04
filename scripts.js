@@ -2,6 +2,11 @@ document.getElementById('openGameButton').addEventListener('click', function() {
     window.location.href = 'Game.html'; 
 });
 
+document.getElementById('openDocumentation1').addEventListener('click', function() {
+    window.location.href = 'WireFrame.pdf'; 
+});
+
+
 // Booking JS
 document.addEventListener("DOMContentLoaded", function() {
     loadLodges();
