@@ -3,7 +3,7 @@ document.getElementById('openGameButton').addEventListener('click', function() {
 });
 
 document.getElementById('openDocumentation1').addEventListener('click', function() {
-    window.open('ASSIGNMENT 2 DOCUMENTATION.pdf','_blank'; 
+    window.open('DocPart1.pdf','_blank'; 
 });
 
 
