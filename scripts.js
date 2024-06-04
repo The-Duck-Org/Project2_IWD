@@ -3,7 +3,7 @@ document.getElementById('openGameButton').addEventListener('click', function() {
 });
 
 document.getElementById('openDocumentation1').addEventListener('click', function() {
-    window.location.href = 'WireFrame.pdf'; 
+    window.open('ASSIGNMENT 2 DOCUMENTATION.pdf','_blank'; 
 });
 
 
