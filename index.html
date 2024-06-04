@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Park Adventure </title>
+    <link rel="stylesheet" href ="styles.css">
+</head>
+<body>
+<section class="Intro">
+    <h1 style="margin-left: 10px;"> Piha Holiday Lodge</h1>
+    <p style="margin-left: 10px;"> Welcome to Piha Lodge booking System. <br>
+            Would you like to hear the pleasant sound of waves when you wake up and <br>
+            have a coffee oversighting one of the most beautiful places in Auckland... 
+        <br>  Reserve a lodge at Piha Holiday Lodge today and <br>
+        enjoy the beautiful experience Piha has to offer you !!
+    </p>
+    <button class="IntroButton" id="openGameButton">Game</button>
+    <button class="IntroButton">Documentation 1</button>
+    <button class="IntroButton">Documentation 2</button>
+</section>
+<section class="Booking">
+    <div class="BookingDiv">        
+        <div class="InfoBooking">
+            <h1> Lodge Booking </h1>
+            <p> <h3>How To Book</h3>
+                <br>
+                1. Select a check-in and a check-out date.<br><br>
+                2. Select number of people staying.<br><br>
+                3. Click on Search Button.<br><br>
+                4. Select one of the available lodges (highlighted green).<br><br>
+                5. Read the booking details and click confirm.<br>
+        </p>
+        </div>
+<div class="container">
+    <header>
+        <h1>Piha Holiday Lodges Booking</h1>
+    </header>
+    <main>
+        <div class="booking-form">
+            <label for="checkin">Check In:</label>
+            <input type="date" id="checkin" onchange="setCheckoutMinDate()">
+            <label for="checkout">Check Out:</label>
+            <input type="date" id="checkout">
+            <label for="numPeople">Number of People:</label>
+            <input type="number" id="numPeople" min="1" max="10" value="1">
+            <button onclick="searchLodges()">Search</button>
+        </div>
+        <div id="map">
+            <!-- Lodges layout -->
+        </div>
+        <div id="lodge-info">
+            <!-- Lodge information-->
+        </div>
+        <div id="summary">
+            <!-- Booking summary -->
+        </div>
+        <div id="final-summary" style="display: none;">
+            <!-- Final booking summary -->
+        </div>
+    </main>
+</div>
+
+</section>
+<script src="game.js"></script>
+<script src="scripts.js"></script>
+  
+</body>
+</html>
